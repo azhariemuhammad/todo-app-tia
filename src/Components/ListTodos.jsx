@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import { 
   Card,
   Header,
@@ -11,7 +10,9 @@ import {
   Input
 } from 'reactbulma'
 
-class Todo extends Component {
+import TodoItems from './TodoItems'
+
+class List extends Component {
   constructor () {
     super () 
   }
@@ -23,30 +24,8 @@ class Todo extends Component {
         <Card>
           <Card.Content>
             <Content style={styles.content}>
-              <div className="toggle" style={styles.toggle}>
-                <input type="checkbox" checked={true} name="d" id="v"/>
-              </div>
-              <div className="todo_item" style={styles.item}>
-                sdgsf
-              </div>
-              <div className="destroy" style={styles.destroy}>
-                X
-              </div>
+             <TodoItems />
             </Content>
-
-            <Content style={styles.content}>
-              <div className="toggle" style={styles.toggle}>
-                <input type="checkbox" checked={true} name="d" id="v" />
-              </div>
-              <div className="todo_item" style={styles.item}>
-                sdgsf
-              </div>
-              <div className="destroy" style={styles.destroy}>
-                X
-              </div>
-            </Content>
-
-            
           </Card.Content>
         </Card>
       </div>
@@ -60,16 +39,9 @@ const styles = {
   content: {
     display: 'flex',
     flexDirection: 'row'
-  },
-  toggle: {
-    marginRight: '20px',
-  },
-  destroy: {
-    position: 'fixed',
-    right: '5%'
   }
 }
 
-export default Todo
+export default List
 
 

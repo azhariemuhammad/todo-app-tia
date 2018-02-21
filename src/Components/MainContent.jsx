@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import InputField from './InputField'
-import ListTodos from './ListTodos'
+import List from './ListTodos'
 
 class MainContent extends Component {
   constructor () {
@@ -13,7 +13,7 @@ class MainContent extends Component {
     return (
       <div className="main_content" style={styles.container}>
         <InputField />
-        <ListTodos />
+        <List />
       </div>
     )
   }
