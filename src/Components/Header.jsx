@@ -5,7 +5,7 @@ import {
   Title,
 } from 'reactbulma'
 
-import BurgerMenu from './BurgerMenu.js'
+import BurgerMenu from './BurgerMenu'
 
 class Header extends Component {
 
